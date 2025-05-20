@@ -29,9 +29,10 @@
           nativeBuildInputs = with pkgs; [
             rustc
             cargo
-	    rustfmt
+	          rustfmt
             protobuf
             pkg-config
+            clippy
           ];
           # Certain Rust tools won't work without this
           # This can also be fixed by using oxalica/rust-overlay and specifying the rust-src extension
